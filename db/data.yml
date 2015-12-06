@@ -1,0 +1,247 @@
+
+---
+menus:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  records: 
+  - - '980190963'
+    - Breakfast
+    - '2015-12-06 10:39:10.286277'
+    - '2015-12-06 10:39:10.286277'
+  - - '980190964'
+    - Lunch
+    - '2015-12-06 10:39:43.793134'
+    - '2015-12-06 10:39:43.793134'
+  - - '980190965'
+    - Dinner
+    - '2015-12-06 10:39:57.472924'
+    - '2015-12-06 10:39:57.472924'
+  - - '980190966'
+    - Drinks
+    - '2015-12-06 10:40:05.452164'
+    - '2015-12-06 10:40:05.452164'
+
+---
+coupons:
+  columns:
+  - id
+  - code
+  - discount_rate
+  - created_at
+  - updated_at
+  records: 
+  - - '980190963'
+    - CODERSCHOOL
+    - '50'
+    - '2015-12-06 12:32:55.943492'
+    - '2015-12-06 12:32:55.943492'
+
+---
+orders:
+  columns:
+  - id
+  - name
+  - phone
+  - address
+  - total_price
+  - discount_rate
+  - dish_id
+  - created_at
+  - updated_at
+  records: 
+  - - '980190966'
+    - Nguyễn Nhật Hoàng
+    - 0123456789
+    - 11 Võ Trường Toản, Quận Bình Thạnh, Tp Hồ Chí Minh
+    - 
+    - 
+    - '374648174'
+    - '2015-12-06 13:01:54.995619'
+    - '2015-12-06 13:01:54.995619'
+  - - '980190967'
+    - Nguyễn Nhật Hoàng
+    - 0123456789
+    - 11 Võ Trường Toản, Quận Bình Thạnh, Tp Hồ Chí Minh
+    - 
+    - 
+    - '374648174'
+    - '2015-12-06 13:04:29.451771'
+    - '2015-12-06 13:04:29.451771'
+  - - '980190968'
+    - Nguyễn Nhật Hoàng
+    - 0123456789
+    - 11 Võ Trường Toản, Quận Bình Thạnh, Tp Hồ Chí Minh
+    - '25000.0'
+    - '50'
+    - '374648174'
+    - '2015-12-06 14:38:03.268364'
+    - '2015-12-06 14:38:03.268364'
+  - - '980190969'
+    - Nguyễn Nhật Hoàng
+    - 0123456789
+    - 11 Võ Trường Toản, Quận Bình Thạnh, Tp Hồ Chí Minh
+    - '0.0'
+    - '0'
+    - '113629430'
+    - '2015-12-06 14:42:26.31543'
+    - '2015-12-06 14:42:26.31543'
+
+---
+dishes:
+  columns:
+  - id
+  - name
+  - price
+  - description
+  - image_url
+  - menu_id
+  - created_at
+  - updated_at
+  records: 
+  - - '51848956'
+    - Bún Thịt Nướng
+    - '40000'
+    - Bún thịt nướng is a popular Vietnamese cold rice vermicelli noodle dish topped
+      with grilled pork, fresh herbs like basil and mint, fresh salad and bean sprouts,
+      and chả giò. The dish is dressed in fish sauce.
+    - http://anh.eva.vn/upload/4-2014/images/2014-11-18/1416283892-bun-thit-nuong-4.jpg
+    - '980190965'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:36:23'
+  - - '113629430'
+    - Hủ Tiếu
+    - '50000'
+    - Hủ tiếu is a noodle soup consisting of rice noodles with pork stock and toppings.
+      Kuy teav is generally thought to have originated with the ethnic Chinese groups
+      that settled in Southeast Asian countries.
+    - http://c0.f21.img.vnecdn.net/2014/01/02/hutieuthapcam-8697-1388656340.jpg
+    - '980190963'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:43:44.018574'
+  - - '241469500'
+    - Bánh Cuốn
+    - '45000'
+    - Bánh cuốn is a dish from Northern Vietnam.
+    - https://i.ytimg.com/vi/5CRLn1Bb1bg/maxresdefault.jpg
+    - '980190964'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:45:26.52556'
+  - - '246612531'
+    - Bánh Cuốn
+    - '45000'
+    - Bánh cuốn is a dish from Northern Vietnam.
+    - https://i.ytimg.com/vi/5CRLn1Bb1bg/maxresdefault.jpg
+    - '980190965'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:36:23'
+  - - '281110143'
+    - Bánh Cuốn
+    - '45000'
+    - Bánh cuốn is a dish from Northern Vietnam.
+    - https://i.ytimg.com/vi/5CRLn1Bb1bg/maxresdefault.jpg
+    - '980190963'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:46:54.546757'
+  - - '298486374'
+    - Bánh Canh
+    - '50000'
+    - Bánh canh is a thick Vietnamese noodle that can be made from tapioca flour or
+      a mixture of rice and tapioca flour. "Cake" refers to the thick sheet of uncooked
+      dough from which the noodles are cut.
+    - http://www.banhcanh.org/images/post/2013/12/18/18//1379070248_news.JPG
+    - '980190965'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:36:23'
+  - - '339908452'
+    - Bún Riêu
+    - '50000'
+    - Bún riêu is a Vietnamese meat rice vermicelli soup. There are several varieties
+      of bún riêu, including bún riêu cua, bún riêu cá, and bún riêu ốc. Bún riêu
+      cua is served with tomato broth and topped with crab or shrimp paste.
+    - http://2monngonmoingay.com/wp-content/uploads/c%C3%A1ch-nau-bun-rieu-cua-ngon-nhat.jpg
+    - '980190964'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:45:49.192085'
+  - - '374648174'
+    - Bánh Canh
+    - '50000'
+    - Bánh canh is a thick Vietnamese noodle that can be made from tapioca flour or
+      a mixture of rice and tapioca flour. "Cake" refers to the thick sheet of uncooked
+      dough from which the noodles are cut.
+    - http://www.banhcanh.org/images/post/2013/12/18/18//1379070248_news.JPG
+    - '980190963'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:44:05.359131'
+  - - '457008489'
+    - Bún Thịt Nướng
+    - '40000'
+    - Bún thịt nướng is a popular Vietnamese cold rice vermicelli noodle dish topped
+      with grilled pork, fresh herbs like basil and mint, fresh salad and bean sprouts,
+      and chả giò. The dish is dressed in fish sauce.
+    - http://anh.eva.vn/upload/4-2014/images/2014-11-18/1416283892-bun-thit-nuong-4.jpg
+    - '980190964'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:44:55.013635'
+  - - '507103779'
+    - Bún Riêu
+    - '50000'
+    - Bún riêu is a Vietnamese meat rice vermicelli soup. There are several varieties
+      of bún riêu, including bún riêu cua, bún riêu cá, and bún riêu ốc. Bún riêu
+      cua is served with tomato broth and topped with crab or shrimp paste.
+    - http://2monngonmoingay.com/wp-content/uploads/c%C3%A1ch-nau-bun-rieu-cua-ngon-nhat.jpg
+    - '980190963'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:44:19.520757'
+  - - '587967610'
+    - Bánh Canh
+    - '50000'
+    - Bánh canh is a thick Vietnamese noodle that can be made from tapioca flour or
+      a mixture of rice and tapioca flour. "Cake" refers to the thick sheet of uncooked
+      dough from which the noodles are cut.
+    - http://www.banhcanh.org/images/post/2013/12/18/18//1379070248_news.JPG
+    - '980190964'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:45:37.847912'
+  - - '620733622'
+    - Hủ Tiếu
+    - '50000'
+    - Hủ tiếu is a noodle soup consisting of rice noodles with pork stock and toppings.
+      Kuy teav is generally thought to have originated with the ethnic Chinese groups
+      that settled in Southeast Asian countries.
+    - http://c0.f21.img.vnecdn.net/2014/01/02/hutieuthapcam-8697-1388656340.jpg
+    - '980190965'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:36:23'
+  - - '638205575'
+    - Hủ Tiếu
+    - '50000'
+    - Hủ tiếu is a noodle soup consisting of rice noodles with pork stock and toppings.
+      Kuy teav is generally thought to have originated with the ethnic Chinese groups
+      that settled in Southeast Asian countries.
+    - http://c0.f21.img.vnecdn.net/2014/01/02/hutieuthapcam-8697-1388656340.jpg
+    - '980190964'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:45:15.05304'
+  - - '980190962'
+    - Bún Thịt Nướng
+    - '40000'
+    - Bún thịt nướng is a popular Vietnamese cold rice vermicelli noodle dish topped
+      with grilled pork, fresh herbs like basil and mint, fresh salad and bean sprouts,
+      and chả giò. The dish is dressed in fish sauce.
+    - http://anh.eva.vn/upload/4-2014/images/2014-11-18/1416283892-bun-thit-nuong-4.jpg
+    - '980190963'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:43:34.665421'
+  - - '1018350795'
+    - Bún Riêu
+    - '50000'
+    - Bún riêu is a Vietnamese meat rice vermicelli soup. There are several varieties
+      of bún riêu, including bún riêu cua, bún riêu cá, and bún riêu ốc. Bún riêu
+      cua is served with tomato broth and topped with crab or shrimp paste.
+    - http://2monngonmoingay.com/wp-content/uploads/c%C3%A1ch-nau-bun-rieu-cua-ngon-nhat.jpg
+    - '980190965'
+    - '2015-12-06 10:36:23'
+    - '2015-12-06 10:47:39.895903'

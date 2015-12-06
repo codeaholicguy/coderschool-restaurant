@@ -21194,3 +21194,688 @@ Started GET "/" for 127.0.0.1 at 2015-12-06 23:50:55 +0700
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 00:24:41 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 329ms (Views: 319.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2015-12-07 00:24:57 +0700
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  "menus".* FROM "menus"  ORDER BY "menus"."id" ASC LIMIT 1
+  [1m[36mDish Load (0.4ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.7ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (13.7ms)
+  Rendered menus/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 151ms (Views: 118.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.3ms)[0m  SELECT  "menus".* FROM "menus"  ORDER BY "menus"."id" ASC LIMIT 1
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.9ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.8ms)
+  Rendered menus/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-31568c9a8038544d733ba82c91a780301a1c44e20bfed282dbdc2e7106ab6f96.css?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:26:17 +0700
+
+
+Started GET "/menus" for 127.0.0.1 at 2015-12-07 00:30:01 +0700
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.3ms)[0m  SELECT  "menus".* FROM "menus"  ORDER BY "menus"."id" ASC LIMIT 1
+  [1m[36mDish Load (0.4ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.9ms)
+  Rendered menus/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1345ms (Views: 1340.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-c208d47574f063e2f257c35fc3a4cff05b2070e88f482a33fd0bcd7e5034f967.css?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:30:02 +0700
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:30:07 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 507103779]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.4ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (4.3ms)
+  Rendered menus/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 86ms (Views: 79.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/980190963?dish=281110143" for 127.0.0.1 at 2015-12-07 00:30:09 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"281110143", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 281110143]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.5ms)
+  Rendered menus/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/980190963?dish=281110143" for 127.0.0.1 at 2015-12-07 00:31:10 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"281110143", "id"=>"980190963"}
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 281110143]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.3ms)
+  [1m[35mDish Load (0.4ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.8ms)
+  Rendered menus/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 1293ms (Views: 1290.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-b7998bf95ac0059ef7ecc3d81c81f6f58c46674daad192cda102c21d587258a2.css?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:31:11 +0700
+
+
+Started GET "/menus/980190963?dish=281110143" for 127.0.0.1 at 2015-12-07 00:32:37 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"281110143", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 281110143]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.5ms)
+  Rendered menus/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 1299ms (Views: 1294.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-313dada2a8a9bbd2d49a60b11a8f9e3015e27f95614c5478a260a8ff8a159bbc.css?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:32:38 +0700
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:32:42 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 507103779]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.1ms)
+  Rendered menus/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:33:02 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 507103779]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.1ms)
+  Rendered menus/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1268ms (Views: 1265.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-72c6dedbf9b40512985e1282c1bd14e2b2756a35cf9f5bc6f6f02eecfdab4eb2.css?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:03 +0700
+
+
+Started GET "/menus/980190963?dish=281110143" for 127.0.0.1 at 2015-12-07 00:33:05 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"281110143", "id"=>"980190963"}
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.4ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 281110143]]
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (2.5ms)
+  [1m[35mDish Load (0.6ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (11.0ms)
+  Rendered menus/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 158ms (Views: 150.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:33:24 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 507103779]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.1ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (4.4ms)
+  Rendered menus/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 76ms (Views: 73.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-72c6dedbf9b40512985e1282c1bd14e2b2756a35cf9f5bc6f6f02eecfdab4eb2.css?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:33:25 +0700
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:34:02 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.1ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 507103779]]
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (2.2ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.6ms)
+  Rendered menus/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 1233ms (Views: 1230.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-d938d7cc4942f6954cdb9333e8265089b3280e2667e4e5ac50272f2c6e8be1d2.css?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:04 +0700
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:34:35 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 507103779]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.6ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (2.9ms)
+  Rendered menus/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 1292ms (Views: 1289.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-d034be8e781ef5aeeaf4ef67a1c5b0ed0c199970acc0e261a54bf163a804d5d2.css?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:36 +0700
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[35mMenu Load (0.6ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 507103779]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.9ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (8.2ms)
+  Rendered menus/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 105ms (Views: 101.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-d938d7cc4942f6954cdb9333e8265089b3280e2667e4e5ac50272f2c6e8be1d2.css?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:34:47 +0700
+
+
+Started GET "/menus/980190963?dish=281110143" for 127.0.0.1 at 2015-12-07 00:34:50 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"281110143", "id"=>"980190963"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 281110143]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.4ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.7ms)
+  Rendered menus/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 90ms (Views: 87.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 00:34:51 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.1ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 507103779]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.3ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.3ms)
+  Rendered menus/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/menus/980190963?dish=374648174" for 127.0.0.1 at 2015-12-07 00:34:52 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"374648174", "id"=>"980190963"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 374648174]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.4ms)
+  Rendered menus/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/980190963?dish=113629430" for 127.0.0.1 at 2015-12-07 00:34:53 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"113629430", "id"=>"980190963"}
+  [1m[35mMenu Load (0.2ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190963]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190963"]]
+  [1m[35mDish Load (0.1ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 113629430]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (2.8ms)
+  Rendered menus/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/menus/980190963?dish=113629430" for 127.0.0.1 at 2015-12-07 00:35:30 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"113629430", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.1ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.1ms)
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (4.8ms)
+  Rendered menus/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1224ms (Views: 1221.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/application.self-a3d737e5c8bdef606f2eaa31e632f046e991d12e78de951d3a7ff7b9912c1527.css?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 00:35:31 +0700
+
+
+Started GET "/menus/980190964" for 127.0.0.1 at 2015-12-07 00:35:38 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190964"}
+  [1m[35mMenu Load (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", 980190964]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", "980190964"]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1  [["menu_id", 980190964]]
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT "menus".* FROM "menus"[0m
+  Rendered menus/_menu_items.html.erb (1.4ms)
+  [1m[35mDish Load (0.2ms)[0m  SELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  [["menu_id", 980190964]]
+  Rendered menus/_menu_details.html.erb (3.6ms)
+  Rendered menus/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 85ms (Views: 81.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/menus/980190963" for 127.0.0.1 at 2015-12-07 00:35:39 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.1ms)
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (3.2ms)
+  Rendered menus/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.8ms)

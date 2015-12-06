@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div class="card">
+  <div class="card-block">
+    <p class="card-text">
+      <strong>Name:</strong>
+      <%= @order.name %>
+    </p>
+
+    <p class="card-text">
+      <strong>Phone:</strong>
+      <%= @order.phone %>
+    </p class="card-text">
+
+    <p class="card-text">
+      <strong>Address:</strong>
+      <%= @order.address %>
+    </p class="card-text">
+
+    <p class="card-text">
+      <strong>Total price:</strong>
+      <%= number_to_currency(@order.total_price, :unit => 'VND', precision: 0) %>
+    </p class="card-text">
+
+    <p class="card-text">
+      <strong>Discount rate:</strong>
+      <%= @order.discount_rate %>
+    </p>
+
+    <p class="card-text">
+      <strong>Dish:</strong>
+      <%= @order.dish.name %>
+    </p>
+    <a class="btn btn-lg btn-secondary" href="/menus">See Menu now</a>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6 tab-pane">
+    <div class="list-group">
+      <% @dishes.each do |dish| %>
+      <%= link_to menu_path(id: @current_menu.id, dish: dish.id) do %>
+      <button class="list-group-item"><%= dish.name %>
+        <span class="label label-default label-pill pull-right"><%= number_to_currency(dish.price, :unit => 'VND', precision: 0) %></span>
+      </button>
+      <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-6 tab-pane">
+    <% if @current_dish.present? %>
+    <div class="card">
+      <img alt="<%= @current_dish.name%>" class="card-img-top" src="<%= @current_dish.image_url%>" style="width: 280px; height: 180px">
+      <div class="card-block">
+        <h4 class="card-title"><%= @current_dish.name%></h4>
+        <p class="card-text"><%= @current_dish.description%></p>
+        <%= link_to new_order_path(dish: @current_dish.id) do %>
+        <button class="btn btn-primary">Order</button>
+        <% end %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="row">
+  <% @menus.each do |menu| %>
+  <%= link_to menu_path(menu) do %>
+  <button class="btn btn-secondary" href=""><%= menu.name %></button>
+  <% end %>
+  <% end %>
+</div>

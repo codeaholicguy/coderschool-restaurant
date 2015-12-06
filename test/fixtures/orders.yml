@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  phone: MyString
+  address: MyString
+  total_price: 9.99
+  discount_rate: 1
+  dish_id: 
+
+two:
+  name: MyString
+  phone: MyString
+  address: MyString
+  total_price: 9.99
+  discount_rate: 1
+  dish_id: 

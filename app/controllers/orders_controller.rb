@@ -29,7 +29,7 @@ class OrdersController < ApplicationController
     @coupon = Coupon.find_by_code(@order.coupon_code)
     discount_rate = @coupon.present? ? @coupon.discount_rate : 0;
     @order.discount_rate = discount_rate
-    @order.total_price = @dish.price * discount_rate / 100
+    @order.total_price = @dish.price - @dish.price * discount_rate / 100
 
     respond_to do |format|
       if @order.save

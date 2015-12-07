@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :reviews
+
   resources :orders
-  resources :dishes
+  resources :dishes do
+    resources :reviews
+  end
   resources :coupons
   resources :menus
 

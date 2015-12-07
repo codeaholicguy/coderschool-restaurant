@@ -138,12 +138,22 @@ body {
     width: 42rem;
   }
 }
-.tab-pane {
-  height: 420px;
+.panel-dish {
+  height: 400px;
+}
+.panel-review {
+  height: 438px;
+  background-color: #fff;
+  padding: 20px;
+  color: #333;
+  text-shadow: none;
+}
+.panel-dish-description {
+  height: 140px;
   overflow-y: scroll;
 }
-.tab-text {
-  height: 100px;
+.panel-dish-description-preview {
+  height: 88px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -176,4 +186,7 @@ body {
 .card-title {
   color: #000;
   text-shadow: none;
+}
+.panel-review nav.pagination {
+    background-color: #333;
 }

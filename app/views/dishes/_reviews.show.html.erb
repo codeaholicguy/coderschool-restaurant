@@ -1,0 +1,11 @@
+<% if @reviews.present? %>
+<%= paginate @reviews %>
+<% @reviews.each do |review| %>
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading"><%= review.name%> - <%= pluralize(review.star, 'star')%></h4>
+    <p><%= review.body%></p>
+  </div>
+</div>
+<% end %>
+<% end %>

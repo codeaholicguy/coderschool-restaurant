@@ -11,7 +11,7 @@ class MenusController < ApplicationController
     else
       @current_menu = @menus.first
     end
-    @dishes = Dish.find_by_menu(@current_menu.id)
+    @dishes = Dish.find_by_menu(@current_menu.id).page params[:page]
     @current_dish = @dishes.first
   end
 
@@ -19,7 +19,7 @@ class MenusController < ApplicationController
   # GET /menus/1.json
   def show
     @menus = Menu.all
-    @dishes = Dish.find_by_menu(params[:id])
+    @dishes = Dish.find_by_menu(params[:id]).page params[:page]
     @current_menu = Menu.find(params[:id])
     current_dish_id = params[:dish]
     if (current_dish_id.present?)

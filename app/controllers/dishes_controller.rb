@@ -10,7 +10,8 @@ class DishesController < ApplicationController
   # GET /dishes/1
   # GET /dishes/1.json
   def show
-    @current_dish = Dish.find(params[:id])
+    page = params[:page].present? ? params[:page] : 1
+    @reviews = Review.find_by_dish(params[:id]).page page
   end
 
   # GET /dishes/new

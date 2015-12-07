@@ -15,8 +15,14 @@
     <div class="card">
       <img alt="<%= @current_dish.name%>" class="card-img-top" src="<%= @current_dish.image_url%>" style="width: 280px; height: 180px">
       <div class="card-block">
+        <%= link_to dish_path do %>
         <h4 class="card-title"><%= @current_dish.name%></h4>
+<<<<<<< HEAD
         <p class="card-text tab-text"><%= @current_dish.description%></p>
+=======
+        <% end %>
+        <p class="card-text"><%= @current_dish.description%></p>
+>>>>>>> origin/master
         <%= link_to new_order_path(dish: @current_dish.id) do %>
         <button class="btn btn-primary">Order</button>
         <% end %>

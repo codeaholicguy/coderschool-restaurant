@@ -1,3 +1,4 @@
+
 # Assignment Week 1 - *Restaurant*
 
 **Restaurant** is a Ruby on Rails application.

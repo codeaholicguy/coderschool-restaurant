@@ -35,7 +35,7 @@ Bonus User Stories:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://i.imgur.com/link/to/your/gif/file.gif)
+![Video Walkthrough](http://i.imgur.com/P8p5idn.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

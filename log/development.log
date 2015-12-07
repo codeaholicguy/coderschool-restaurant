@@ -29431,3 +29431,403 @@ Started GET "/" for 127.0.0.1 at 2015-12-07 20:39:17 +0700
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-07 20:49:07 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 283ms (Views: 269.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3d689686d7a32cb6f2340a8ef63f24049565617b7a484b3cdef3d91b1ba242a2.css?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/bootstrap.self-fe486684af4771e52c8d79a0f9b92ff72ec8b3d21774a3f8d5251ccac2b5f828.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/contact.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/coupons.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/dishes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/menus.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-12-07 20:49:08 +0700
+
+
+Started GET "/menus" for 127.0.0.1 at 2015-12-07 20:50:17 +0700
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  "menus".* FROM "menus"  ORDER BY "menus"."id" ASC LIMIT 1
+  [1m[36mDish Load (0.4ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.4ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (3.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (42.5ms)
+  Rendered menus/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 184ms (Views: 137.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/menus/980190963" for 127.0.0.1 at 2015-12-07 20:50:20 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.3ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (24.6ms)
+  Rendered menus/show.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 102ms (Views: 95.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/980190964" for 127.0.0.1 at 2015-12-07 20:50:21 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190964"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190964]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190964"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190964]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190964]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190964]]
+  Rendered menus/_menu_details.html.erb (5.9ms)
+  Rendered menus/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/980190965" for 127.0.0.1 at 2015-12-07 20:50:22 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190965"}
+  [1m[36mMenu Load (0.4ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190965]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190965"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190965]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190965]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190965]]
+  Rendered menus/_menu_details.html.erb (6.6ms)
+  Rendered menus/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 81ms (Views: 75.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/menus/980190963" for 127.0.0.1 at 2015-12-07 20:50:23 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.8ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (21.0ms)
+  Rendered menus/show.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 111ms (Views: 105.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/menus/980190963?page=3" for 127.0.0.1 at 2015-12-07 20:50:25 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"page"=>"3", "id"=>"980190963"}
+  [1m[36mMenu Load (0.3ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 14[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 14  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (18.3ms)
+  Rendered menus/show.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 89ms (Views: 84.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/menus/980190963?page=2" for 127.0.0.1 at 2015-12-07 20:50:27 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 7[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 7  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (27.8ms)
+  Rendered menus/show.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 93ms (Views: 90.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/980190963" for 127.0.0.1 at 2015-12-07 20:50:31 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (21.6ms)
+  Rendered menus/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 99ms (Views: 95.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/menus/980190963?dish=980190962" for 127.0.0.1 at 2015-12-07 20:50:32 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"980190962", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (18.3ms)
+  Rendered menus/show.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 100ms (Views: 96.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/menus/980190963?dish=113629430" for 127.0.0.1 at 2015-12-07 20:50:33 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"113629430", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (22.9ms)
+  Rendered menus/show.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 100ms (Views: 97.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/980190963?dish=374648174" for 127.0.0.1 at 2015-12-07 20:50:34 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"374648174", "id"=>"980190963"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 374648174]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.4ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (26.1ms)
+  Rendered menus/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 117ms (Views: 114.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/menus/980190963?dish=507103779" for 127.0.0.1 at 2015-12-07 20:50:35 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"507103779", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 507103779]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (33.5ms)
+  Rendered menus/show.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 139ms (Views: 135.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/menus/980190963?dish=281110143" for 127.0.0.1 at 2015-12-07 20:50:36 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"281110143", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 281110143]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (19.3ms)
+  Rendered menus/show.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/980190963?dish=1018350796" for 127.0.0.1 at 2015-12-07 20:50:37 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"1018350796", "id"=>"980190963"}
+  [1m[36mMenu Load (0.1ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 1018350796]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.3ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (23.3ms)
+  Rendered menus/show.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 110ms (Views: 107.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/menus/980190963?dish=113629430" for 127.0.0.1 at 2015-12-07 20:50:41 +0700
+Processing by MenusController#show as HTML
+  Parameters: {"dish"=>"113629430", "id"=>"980190963"}
+  [1m[36mMenu Load (0.2ms)[0m  [1mSELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1[0m  [["id", 980190963]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "menus".* FROM "menus" WHERE "menus"."id" = $1 LIMIT 1  [["id", "980190963"]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  [1m[35mMenu Load (0.2ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (22.8ms)
+  Rendered menus/show.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 95ms (Views: 91.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new?dish=113629430" for 127.0.0.1 at 2015-12-07 20:50:46 +0700
+Processing by OrdersController#new as HTML
+  Parameters: {"dish"=>"113629430"}
+  Rendered orders/_form.html.erb (45.0ms)
+  Rendered orders/new.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 134ms (Views: 123.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dishes/113629430" for 127.0.0.1 at 2015-12-07 20:50:52 +0700
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"113629430"}
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  [1m[35mReview Load (0.5ms)[0m  SELECT  "reviews".* FROM "reviews" WHERE "reviews"."dish_id" = $1 LIMIT 4 OFFSET 0  [["dish_id", 113629430]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."dish_id" = $1[0m  [["dish_id", 113629430]]
+  Rendered dishes/_reviews.show.html.erb (24.5ms)
+  Rendered dishes/_dish.html.erb (27.8ms)
+  Rendered dishes/show.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 104ms (Views: 98.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/dishes/113629430?page=2" for 127.0.0.1 at 2015-12-07 20:50:56 +0700
+Processing by DishesController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"113629430"}
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 113629430]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."dish_id" = $1 LIMIT 4 OFFSET 4[0m  [["dish_id", 113629430]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."dish_id" = $1  [["dish_id", 113629430]]
+  Rendered dishes/_reviews.show.html.erb (22.5ms)
+  Rendered dishes/_dish.html.erb (24.8ms)
+  Rendered dishes/show.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dishes/113629430?page=3" for 127.0.0.1 at 2015-12-07 20:50:57 +0700
+Processing by DishesController#show as HTML
+  Parameters: {"page"=>"3", "id"=>"113629430"}
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  [1m[35mReview Load (0.2ms)[0m  SELECT  "reviews".* FROM "reviews" WHERE "reviews"."dish_id" = $1 LIMIT 4 OFFSET 8  [["dish_id", 113629430]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."dish_id" = $1[0m  [["dish_id", 113629430]]
+  Rendered dishes/_reviews.show.html.erb (25.2ms)
+  Rendered dishes/_dish.html.erb (27.6ms)
+  Rendered dishes/show.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 100ms (Views: 97.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dishes/113629430?page=2" for 127.0.0.1 at 2015-12-07 20:50:58 +0700
+Processing by DishesController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"113629430"}
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 113629430]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."dish_id" = $1 LIMIT 4 OFFSET 4[0m  [["dish_id", 113629430]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."dish_id" = $1  [["dish_id", 113629430]]
+  Rendered dishes/_reviews.show.html.erb (25.1ms)
+  Rendered dishes/_dish.html.erb (27.3ms)
+  Rendered dishes/show.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dishes/113629430?review=true" for 127.0.0.1 at 2015-12-07 20:51:02 +0700
+Processing by DishesController#show as HTML
+  Parameters: {"review"=>"true", "id"=>"113629430"}
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  Rendered dishes/_review.add.html.erb (29.6ms)
+  Rendered dishes/_dish.html.erb (32.0ms)
+  Rendered dishes/show.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/dishes/113629430/reviews" for 127.0.0.1 at 2015-12-07 20:51:17 +0700
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rkhdA15mzEKu2ohFr9w3UQhuOhPS/6xFH47hXoJUCNUEA7LjXHSwe/d62ptJgTviRWgupZnWepiRLCMz5RgQAQ==", "review"=>{"name"=>"codeaholicguy", "body"=>"Tuyệt!", "star"=>"4"}, "commit"=>"Create Review", "dish_id"=>"113629430"}
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 113629430]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "reviews" ("name", "body", "star", "dish_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "codeaholicguy"], ["body", "Tuyệt!"], ["star", 4], ["dish_id", 113629430], ["created_at", "2015-12-07 13:51:17.405717"], ["updated_at", "2015-12-07 13:51:17.405717"]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/dishes/113629430
+Completed 302 Found in 12ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/dishes/113629430" for 127.0.0.1 at 2015-12-07 20:51:17 +0700
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"113629430"}
+  [1m[35mDish Load (0.1ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1  [["id", 113629430]]
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."dish_id" = $1 LIMIT 4 OFFSET 0[0m  [["dish_id", 113629430]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."dish_id" = $1  [["dish_id", 113629430]]
+  Rendered dishes/_reviews.show.html.erb (22.1ms)
+  Rendered dishes/_dish.html.erb (24.3ms)
+  Rendered dishes/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders/new?dish=113629430" for 127.0.0.1 at 2015-12-07 20:51:21 +0700
+Processing by OrdersController#new as HTML
+  Parameters: {"dish"=>"113629430"}
+  Rendered orders/_form.html.erb (6.6ms)
+  Rendered orders/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2015-12-07 20:51:32 +0700
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w15eGZ6ubYT6MklnIpHPY1kk7J8GZhMx2WmZqSokTz5pFbH5nLwRvaOSG7nEzMPQFCL4KU1PxexXy1vETWhX6g==", "order"=>{"name"=>"Nguyễn Nhật Hoàng", "phone"=>"0123456789", "address"=>"11 Võ Trường Toản, Quận Bình Thạnh, Tp Hồ Chí Minh", "coupon_code"=>"CODERSCHOOL", "dish_id"=>"113629430"}, "commit"=>"Create Order"}
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  [1m[35mCoupon Load (0.3ms)[0m  SELECT  "coupons".* FROM "coupons" WHERE "coupons"."code" = $1  ORDER BY "coupons"."id" ASC LIMIT 1  [["code", "CODERSCHOOL"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("name", "phone", "address", "dish_id", "discount_rate", "total_price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["name", "Nguyễn Nhật Hoàng"], ["phone", "0123456789"], ["address", "11 Võ Trường Toản, Quận Bình Thạnh, Tp Hồ Chí Minh"], ["dish_id", 113629430], ["discount_rate", 50], ["total_price", "25000.0"], ["created_at", "2015-12-07 13:51:32.162534"], ["updated_at", "2015-12-07 13:51:32.162534"]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/orders/980190971
+Completed 302 Found in 19ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/orders/980190971" for 127.0.0.1 at 2015-12-07 20:51:32 +0700
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"980190971"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 980190971]]
+  [1m[36mDish Load (0.2ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT 1[0m  [["id", 113629430]]
+  Rendered orders/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 81ms (Views: 78.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/menus" for 127.0.0.1 at 2015-12-07 20:51:38 +0700
+Processing by MenusController#index as HTML
+  [1m[35mMenu Load (0.5ms)[0m  SELECT  "menus".* FROM "menus"  ORDER BY "menus"."id" ASC LIMIT 1
+  [1m[36mDish Load (0.3ms)[0m  [1mSELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1  ORDER BY "dishes"."id" ASC LIMIT 1 OFFSET 0[0m  [["menu_id", 980190963]]
+  [1m[35mMenu Load (0.3ms)[0m  SELECT "menus".* FROM "menus"
+  Rendered menus/_menu_items.html.erb (2.8ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "dishes" WHERE "dishes"."menu_id" = $1[0m  [["menu_id", 980190963]]
+  [1m[35mDish Load (0.2ms)[0m  SELECT  "dishes".* FROM "dishes" WHERE "dishes"."menu_id" = $1 LIMIT 7 OFFSET 0  [["menu_id", 980190963]]
+  Rendered menus/_menu_details.html.erb (25.9ms)
+  Rendered menus/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 98ms (Views: 91.8ms | ActiveRecord: 1.8ms)

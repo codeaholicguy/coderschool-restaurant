@@ -1,7 +1,7 @@
 <%= simple_form_for @order do |f| %>
-  <%= f.input :name %>
-  <%= f.input :phone %>
-  <%= f.input :address %>
+  <%= f.input :name, required: true %>
+  <%= f.input :phone, required: true %>
+  <%= f.input :address, required: true %>
   <%= f.input :coupon_code %>
   <%= f.hidden_field :dish_id, :value => params[:dish] %>
   <%= f.button :submit, class: 'btn btn-primary' %>

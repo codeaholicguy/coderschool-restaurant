@@ -1,5 +1,4 @@
 <% if @reviews.present? %>
-<%= paginate @reviews %>
 <% @reviews.each do |review| %>
 <div class="media">
   <div class="media-body">
@@ -8,4 +7,5 @@
   </div>
 </div>
 <% end %>
+<%= paginate @reviews %>
 <% end %>

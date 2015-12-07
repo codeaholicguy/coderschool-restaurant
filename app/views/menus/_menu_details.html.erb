@@ -1,6 +1,5 @@
 <div class="row">
   <div class="col-md-6">
-    <%= paginate @dishes %>
     <div class="list-group">
       <% @dishes.each do |dish| %>
       <%= link_to menu_path(id: @current_menu.id, dish: dish.id, page: params[:page]) do %>
@@ -10,6 +9,7 @@
       <% end %>
       <% end %>
     </div>
+    <%= paginate @dishes %>
   </div>
   <div class="col-md-6 panel-dish">
     <% if @current_dish.present? %>
